@@ -1,14 +1,26 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="styles.css">
+    <script>
+    function HideAndShow(var idName){
+      var something = doucument.getElementById(idName);
+      if(something.display == none){
+        something.display = initial;
+      }
+      else {
+        something.display = none;
+      }
+    }
+    
+  </script>
 </head>
 <body>
   <h1 id="TravelToHawaii">Travel to Hawaii!!</h1>
   <div id="headers">
-    <button id="header1">Places To Visit</span>
-    <button id="header2">Where to Stay</span>
-    <button id="header3">Hawaii Trivia</span>
-    <button id="header4">Gallery</span>
+    <span id="header1">Places To Visit</span>
+    <span id="header2">Where to Stay</span>
+    <span id="header3">Hawaii Trivia</span>
+    <span id="header4">Gallery</span>
   </div>
   <h2>Places To Visit</h2>
   <p>1. Waikiki Beach</p>
