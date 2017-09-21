@@ -3,14 +3,13 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
     <script>
     function HideAndShow(idName){
-      alert('idName: ' + idName);
       var list = ["section1", "section2", "section3", "section4"];
       for (var i=0; i<list.length; i++) {
         var id = list[i];
         if(id == idName) {
-         document.getElementById(idName).style.display = inital; 
+         document.getElementById(idName).style.display = "inital"; 
         } else {
-          document.getElementById(id).style.display = none; 
+          document.getElementById(id).style.display = "none"; 
         }
       }
     }
