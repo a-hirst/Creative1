@@ -3,12 +3,14 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
     <script>
     function HideAndShow(var idName){
-      var something = doucument.getElementById(idName);
-      if(something.display == none){
-        something.display = initial;
-      }
-      else {
-        something.display = none;
+      var list = ["section1", "section2", "section3", "section4"];
+      for (var i=0; i<list.length; i++) {
+        var id = list[i];
+        if(id == idName) {
+         document.getElementById(idName).display = inital; 
+        } else {
+          document.getElementById(id).display = none; 
+        }
       }
     }
     
@@ -17,11 +19,12 @@
 <body>
   <h1 id="TravelToHawaii">Travel to Hawaii!!</h1>
   <div id="headers">
-    <span id="header1">Places To Visit</span>
-    <span id="header2">Where to Stay</span>
-    <span id="header3">Hawaii Trivia</span>
-    <span id="header4">Gallery</span>
+    <button id="header1" onclick="HideAndShow('section1')">Places To Visit</button>
+    <button id="header2" onclick="HideAndShow('section2')">Where to Stay</button>
+    <button id="header3" onclick="HideAndShow('section3')">Hawaii Trivia</button>
+    <button id="header4" onclick="HideAndShow('section4')">Gallery</button>
   </div>
+  <div id='section1'>
   <h2>Places To Visit</h2>
   <p>1. Waikiki Beach</p>
   <p>Waikiki, with its beautiful stretch of oceanfront beach, is Hawaii's biggest tourist attraction. 
@@ -54,7 +57,9 @@
      25 Best Aquariums in the U.S. by TripAdvisor, come face-to-face with sharks, stingrays, turtles, and thousands of vibrant tropical fish at Maui Ocean Center. The Aquarium is home to the world’s
      largest collection of live Pacific corals, faithfully replicating thriving marine ecosystems in every exhibit. Maui Ocean Center is 
      dedicated to perpetuating the Hawaiian culture and the relationship that exists between the Hawaiian people and the sea.</p>
-  <h2>Where to Stay</h2>
+  </div>
+  <div id="section2">
+    <h2>Where to Stay</h2>
   <p>
     There are many beautiful places to stay on the islands of Hawaii. 
     The following list has some of our exotic suggestions!
@@ -70,6 +75,8 @@
       Four Seasons Resort Hualalai
       </a>  - if you want to experience both historic and modern hawaiian experiences</li>
   </ul>
+   
+   <div id="section3">                                                                                                                   </div>                                                                                                                    
   <h2>Hawaii Trivia</h2>
   <ul id = "HawaiiTrivia">
     <li>Hawaii has eight islands: Niihau, Kauai, Oahu, Maui, Molokai, Lanai, Kahoolawe and the Big Island.</li>
@@ -79,6 +86,9 @@
     <li>Hawaii has the largest living museum on earth.</li>
     <li>Suffering in Hawaiian trodition is a spiritual event rather than sport.</li>
    </ul>
+                         </div>
+                         <div id="section4">
   <h2>Gallery</h2>
+                                           </div>
 </body>
 </html>
