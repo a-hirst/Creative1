@@ -2,6 +2,8 @@
  background-image: url(http://beatofhawaii.com/wp-content/uploads/2017/01/Cheapest-Time-to-Fly-to-Hawaii-2.jpg);
  background-repeat: no-repeat;
  background-size: cover; 
- margin-top = 100px;
- margin-bottom = 100px;
+ padding: 120px;
+ text-align: center;
+ font-size: 40pt;
+ color: darkblue;
 }
